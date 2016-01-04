@@ -1,4 +1,8 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
 using EloBuddy;
 using EvadePlus.SkillshotTypes;
 using EvadePlus.SkillshotTypes.SpecialTypes;
@@ -20,7 +24,7 @@ namespace EvadePlus
                         DisplayName = "Mark",
                         ChampionName = "AllChampions",
                         SpellName = "summonersnowball",
-                        Slot = SpellSlot.Summoner1,
+                        Slot = SpellSlot.Q,
                         Delay = 0,
                         Range = 1600,
                         Radius = 60,
@@ -128,7 +132,7 @@ namespace EvadePlus
                         Range = 365,
                         Radius = 365,
                         MissileSpeed = 0,
-                        DangerValue = 2,
+                        DangerValue = 3,
                         IsDangerous = true,
                         MissileSpellName = "Pulverize"
                     }
@@ -145,7 +149,7 @@ namespace EvadePlus
                         Range = 560,
                         Radius = 560,
                         MissileSpeed = 0,
-                        DangerValue = 5,
+                        DangerValue = 4,
                         MissileSpellName = "CurseoftheSadMummy",
                         IsDangerous = true
                     }
@@ -226,10 +230,10 @@ namespace EvadePlus
                         SpellName = "EnchantedCrystalArrow",
                         Slot = SpellSlot.R,
                         Delay = 250,
-                        Range = 12500,
+                        Range =25000,
                         Radius = 130,
                         MissileSpeed = 1600,
-                        DangerValue = 5,
+                        DangerValue = 3,
                         IsDangerous = true,
                         MissileSpellName = "EnchantedCrystalArrow"
                     }
@@ -242,7 +246,7 @@ namespace EvadePlus
                 //        SpellName = "Volley",
                 //        Slot = SpellSlot.W,
                 //        Delay = 250,
-                //        Range = 1150,
+                //        Range = 1200,
                 //        Radius = 20,
                 //        MissileSpeed = 1500,
                 //        DangerValue = 3,
@@ -279,7 +283,7 @@ namespace EvadePlus
                         Range = 950,
                         Radius = 60,
                         MissileSpeed = 1600,
-                        DangerValue = 3,
+                        DangerValue = 2,
                         IsDangerous = true,
                         MissileSpellName = "BardQMissile"
                     }
@@ -296,7 +300,7 @@ namespace EvadePlus
                         Range = 1050,
                         Radius = 70,
                         MissileSpeed = 1800,
-                        DangerValue = 4,
+                        DangerValue = 5,
                         IsDangerous = true,
                         MissileSpellName = "RocketGrabMissile"
                     }
@@ -312,7 +316,7 @@ namespace EvadePlus
                         Delay = 250,
                         Range = 1100,
                         Radius = 60,
-                        MissileSpeed = 1600,
+                        MissileSpeed = 2000, //1600
                         DangerValue = 3,
                         IsDangerous = true,
                         MissileSpellName = "BrandBlazeMissile"
@@ -398,11 +402,12 @@ namespace EvadePlus
                         Range = 950,
                         Radius = 80,
                         MissileSpeed = 2000,
-                        DangerValue = 1,
+                        DangerValue = 2,
                         IsDangerous = false,
                         MissileSpellName = "CaitlynEntrapmentMissile"
                     }
                 },
+                // you can add it
                 //new CircularMissileSkillshot
                 //{
                 //    SpellData = new SpellData
@@ -414,7 +419,7 @@ namespace EvadePlus
                 //        Range = 825,
                 //        Radius = 20,
                 //        MissileSpeed = 0,
-                //        DangerValue = 3,
+                //        DangerValue = 4,
                 //        MissileSpellName = "CassiopeiaPetrifyingGaze"
                 //    }
                 //},
@@ -430,7 +435,7 @@ namespace EvadePlus
                         Range = 600,
                         Radius = 200,
                         MissileSpeed = 0,
-                        DangerValue = 2,
+                        DangerValue = 1,
                         IsDangerous = false,
                         MissileSpellName = "CassiopeiaNoxiousBlast"
                     }
@@ -450,21 +455,24 @@ namespace EvadePlus
                 //        MissileSpellName = "CassiopeiaMiasma"
                 //    }
                 //},
-                //new CircularMissileSkillshot
-                //{
-                //    SpellData = new SpellData
-                //    {
-                //        ChampionName = "Chogath",
-                //        SpellName = "FeralScream",
-                //        Slot = SpellSlot.W,
-                //        Delay = 250,
-                //        Range = 650,
-                //        Radius = 20,
-                //        MissileSpeed = 0,
-                //        DangerValue = 3,
-                //        MissileSpellName = "FeralScream"
-                //    }
-                //},
+             // new CircularMissileSkillshot
+              // {
+               //     SpellData = new SpellData
+               //    {
+                 //      ChampionName = "Chogath",
+                 //      SpellName = "FeralScream",
+                  //    Slot = SpellSlot.W,
+                  //    Delay = 250,
+                   //    Range = 650,
+                   //     Radius = 20,
+                  //    MissileSpeed = 0,
+                  //     DangerValue = 2,
+                  //   MissileSpellName = "FeralScream"
+                  // }
+               // },//
+               
+               
+             
                 new CircularMissileSkillshot
                 {
                     SpellData = new SpellData
@@ -532,36 +540,36 @@ namespace EvadePlus
                         MissileSpellName = "MissileBarrageMissile"
                     }
                 },
-                //new CircularMissileSkillshot
-                //{
-                //    SpellData = new SpellData
-                //    {
-                //        ChampionName = "Darius",
-                //        SpellName = "DariusAxeGrabCone",
-                //        Slot = SpellSlot.E,
-                //        Delay = 320,
-                //        Range = 570,
-                //        Radius = 20,
-                //        MissileSpeed = 0,
-                //        DangerValue = 3,
-                //        MissileSpellName = "DariusAxeGrabCone"
-                //    }
-                //},
-                //new CircularMissileSkillshot //Unknown:SpellType.Arc
-                //{
-                //    SpellData = new SpellData
-                //    {
-                //        ChampionName = "Diana",
-                //        SpellName = "DianaArc",
-                //        Slot = SpellSlot.Q,
-                //        Delay = 250,
-                //        Range = 850,
-                //        Radius = 50,
-                //        MissileSpeed = 1400,
-                //        DangerValue = 3,
-                //        MissileSpellName = "DianaArc"
-                //    }
-                //},
+               new CircularMissileSkillshot
+                {
+                    SpellData = new SpellData
+                    {
+                      ChampionName = "Darius",
+                      SpellName = "DariusAxeGrabCone",
+                       Slot = SpellSlot.E,
+                        Delay = 320,
+                       Range = 570,
+                        Radius = 20,
+                       MissileSpeed = 0,
+                       DangerValue = 3,
+                     MissileSpellName = "DariusAxeGrabCone"
+                    }
+               },
+               new CircularMissileSkillshot //Unknown:SpellType.Arc
+                {
+                    SpellData = new SpellData
+                   {
+                        ChampionName = "Diana",
+                        SpellName = "DianaArc",
+                        Slot = SpellSlot.Q,
+                        Delay = 250,
+                        Range = 850,
+                       Radius = 50,
+                        MissileSpeed = 1400,
+                        DangerValue = 3,
+                        MissileSpellName = "DianaArc"
+                   }
+                },
                 new LinearMissileSkillshot
                 {
                     SpellData = new SpellData
@@ -574,7 +582,7 @@ namespace EvadePlus
                         Range = 1050,
                         Radius = 60,
                         MissileSpeed = 2000,
-                        DangerValue = 3,
+                        DangerValue = 1,
                         IsDangerous = false,
                         MissileSpellName = "InfectedCleaverMissile"
                     }
@@ -588,7 +596,7 @@ namespace EvadePlus
                         SpellName = "DravenRCast",
                         Slot = SpellSlot.R,
                         Delay = 500,
-                        Range = 12500,
+                        Range = 25000,
                         Radius = 160,
                         MissileSpeed = 2000,
                         DangerValue = 5,
@@ -659,7 +667,7 @@ namespace EvadePlus
                         Delay = 250,
                         Range = 1600,
                         Radius = 375,
-                        MissileSpeed = 1650,
+                       // MissileSpeed = 1650, WHY? 
                         DangerValue = 3,
                         IsDangerous = false,
                         MissileSpellName = "EkkoR"
@@ -748,11 +756,30 @@ namespace EvadePlus
                         DangerValue = 2,
                         IsDangerous = false,
                         MissileSpellName = "EzrealEssenceFluxMissile"
-                    }
-                },
+                  
                 /*
                  * TODO: Fiora W
                 */
+                
+          new LinearMissileSkillshot
+                {
+                    SpellData = new SpellData
+            {
+               DisplayName = "FioraWMissile",
+                        ChampionName = "Fiora",
+                        SpellName = "FioraWMissile",
+                        Slot = SpellSlot.W,
+                        Delay = 500,
+                        Range = 750,
+                        Radius = 70,
+                        MissileSpeed = 3200,
+                        DangerValue = 2,
+                        IsDangerous = false,
+                        MissileSpellName = "FioraWMissile" 
+            }
+                },
+                
+               
                 new LinearMissileSkillshot
                 {
                     SpellData = new SpellData
@@ -812,11 +839,10 @@ namespace EvadePlus
                         ChampionName = "Galio",
                         SpellName = "GalioIdolOfDurand",
                         Slot = SpellSlot.R,
-                        Delay = 250,
                         Range = 600,
                         Radius = 600,
                         MissileSpeed = 0,
-                        DangerValue = 3,
+                        DangerValue =5,
                         AddHitbox = false,
                         MissileSpellName = ""
                     }
@@ -832,7 +858,7 @@ namespace EvadePlus
                         Delay = 500,
                         Range = 1150,
                         Radius = 90,
-                        MissileSpeed = 2100,
+                        MissileSpeed = 2000,
                         DangerValue = 2,
                         IsDangerous = false,
                         MissileSpellName = "gnarbigq"
@@ -993,22 +1019,22 @@ namespace EvadePlus
                         MissileSpellName = "GragasR"
                     }
                 },
-                //new LinearMissileSkillshot
-                //{
-                //    SpellData = new SpellData
-                //    {
-                //        ChampionName = "Graves",
-                //        SpellName = "GravesClusterShot",
-                //        Slot = SpellSlot.Q,
-                //        Delay = 250,
-                //        Range = 1025,
-                //        Radius = 60,
-                //        MissileSpeed = 2000,
-                //        DangerValue = 3,
-                //        MissileSpellName = "GravesClusterShotAttack",
-                //        ExtraMissiles = 2
-                //    }
-                //},
+               new LinearMissileSkillshot
+                {
+                    SpellData = new SpellData
+                  {
+                        ChampionName = "Graves",
+                        SpellName = "GravesClusterShot",
+                        Slot = SpellSlot.Q,
+                       Delay = 250,
+                      Range = 1025,
+                       Radius = 60,
+                        MissileSpeed = 2000,
+                        DangerValue = 3,
+                       MissileSpellName = "GravesClusterShotAttack",
+                        ExtraMissiles = 2
+                   }
+                },
                 new LinearMissileSkillshot
                 {
                     SpellData = new SpellData
@@ -1052,9 +1078,9 @@ namespace EvadePlus
                         SpellName = "disabled/HeimerdingerW",
                         Slot = SpellSlot.W,
                         Delay = 250,
-                        Range = 1500,
-                        Radius = 70,
-                        MissileSpeed = 1800,
+                        Range = 1350,
+                        Radius = 50,
+                        MissileSpeed = 2500,
                         DangerValue = 2,
                         IsDangerous = false,
                         MissileSpellName = "HeimerdingerWAttack2"
@@ -1069,10 +1095,10 @@ namespace EvadePlus
                         SpellName = "disabled/HeimerdingerW",
                         Slot = SpellSlot.W,
                         Delay = 250,
-                        Range = 1500,
-                        Radius = 70,
-                        MissileSpeed = 1800,
-                        DangerValue = 2,
+                        Range = 1350,
+                        Radius = 50,
+                        MissileSpeed = 2500,
+                        DangerValue = 4,
                         IsDangerous = false,
                         MissileSpellName = "HeimerdingerWAttack2Ult"
                     }
@@ -1111,6 +1137,7 @@ namespace EvadePlus
                         MissileSpellName = "heimerdingerespell_ult"
                     }
                 },
+                //illaoi?
                 new LinearMissileSkillshot
                 {
                     SpellData = new SpellData
@@ -1121,7 +1148,7 @@ namespace EvadePlus
                         Slot = SpellSlot.R,
                         Delay = 0,
                         Range = 1200,
-                        Radius = 65,
+                        Radius = 120,
                         MissileSpeed = 1600,
                         DangerValue = 2,
                         IsDangerous = false,
@@ -1179,21 +1206,21 @@ namespace EvadePlus
                         MissileSpellName = "JarvanIVDragonStrike2"
                     }
                 },
-                //new CircularMissileSkillshot
-                //{
-                //    SpellData = new SpellData
-                //    {
-                //        ChampionName = "JarvanIV",
-                //        SpellName = "JarvanIVCataclysm",
-                //        Slot = SpellSlot.R,
-                //        Delay = 0,
-                //        Range = 825,
-                //        Radius = 350,
-                //        MissileSpeed = 1900,
-                //        DangerValue = 3,
-                //        MissileSpellName = "JarvanIVCataclysm"
-                //    }
-                //},
+                new CircularMissileSkillshot
+                {
+                   SpellData = new SpellData
+                    {
+                        ChampionName = "JarvanIV",
+                       SpellName = "JarvanIVCataclysm",
+                        Slot = SpellSlot.R,
+                        Delay = 0,
+                        Range = 825,
+                        Radius = 350,
+                        MissileSpeed = 1900,
+                        DangerValue = 5,
+                        MissileSpellName = "JarvanIVCataclysm"
+                    }
+                },
                 new LinearMissileSkillshot
                 {
                     SpellData = new SpellData
@@ -1203,7 +1230,7 @@ namespace EvadePlus
                         SpellName = "JayceQAccel",
                         Slot = SpellSlot.Q,
                         Delay = 250,
-                        Range = 1170,
+                        Range = 1570,
                         Radius = 70,
                         MissileSpeed = 2350,
                         DangerValue = 2,
@@ -1238,7 +1265,7 @@ namespace EvadePlus
                         Slot = SpellSlot.R,
                         Delay = 600,
                         Range = 25000,
-                        Radius = 120,
+                        Radius = 140,
                         MissileSpeed = 1700,
                         DangerValue = 5,
                         IsDangerous = true,
@@ -1321,7 +1348,7 @@ namespace EvadePlus
                         ChampionName = "Karthus",
                         SpellName = "KarthusLayWasteA1",
                         Slot = SpellSlot.Q,
-                        Delay = 625,
+                        Delay = 900,
                         Range = 875,
                         Radius = 190,
                         MissileSpeed = 0,
@@ -1347,21 +1374,21 @@ namespace EvadePlus
                         MissileSpellName = "RiftWalk"
                     }
                 },
-                //new CircularMissileSkillshot
-                //{
-                //    SpellData = new SpellData
-                //    {
-                //        ChampionName = "Kassadin",
-                //        SpellName = "ForcePulse",
-                //        Slot = SpellSlot.E,
-                //        Delay = 250,
-                //        Range = 700,
-                //        Radius = 20,
-                //        MissileSpeed = 0,
-                //        DangerValue = 3,
-                //        MissileSpellName = "ForcePulse"
-                //    }
-                //},
+              //  new CircularMissileSkillshot
+               // {
+               //     SpellData = new SpellData
+                 //   {
+                  //      ChampionName = "Kassadin",
+                  //      SpellName = "ForcePulse",
+                  //      Slot = SpellSlot.E,
+                  //     Delay = 250,
+                   //    Range = 700,
+                   //     Radius = 20,
+                   //     MissileSpeed = 0,
+                   //    DangerValue = 3,
+                    //    MissileSpellName = "ForcePulse"
+                  // }
+               // },
                 new LinearMissileSkillshot
                 {
                     SpellData = new SpellData
@@ -1370,7 +1397,7 @@ namespace EvadePlus
                         ChampionName = "Kennen",
                         SpellName = "KennenShurikenHurlMissile1",
                         Slot = SpellSlot.Q,
-                        Delay = 125,
+                        Delay = 180,
                         Range = 1175,
                         Radius = 50,
                         MissileSpeed = 1700,
@@ -1388,7 +1415,7 @@ namespace EvadePlus
                         SpellName = "KhazixW",
                         Slot = SpellSlot.W,
                         Delay = 250,
-                        Range = 1100,
+                        Range = 105,
                         Radius = 70,
                         MissileSpeed = 1700,
                         DangerValue = 2,
@@ -1558,9 +1585,9 @@ namespace EvadePlus
                         ChampionName = "Leona",
                         SpellName = "LeonaSolarFlare",
                         Slot = SpellSlot.R,
-                        Delay = 625,
+                        Delay =1000,
                         Range = 1200,
-                        Radius = 250,
+                        Radius = 300,
                         MissileSpeed = 0,
                         DangerValue = 5,
                         IsDangerous = true,
@@ -1575,7 +1602,7 @@ namespace EvadePlus
                         ChampionName = "Leona",
                         SpellName = "LeonaZenithBlade",
                         Slot = SpellSlot.E,
-                        Delay = 350,
+                        Delay = 200,
                         Range = 975,
                         Radius = 70,
                         MissileSpeed = 2000,
@@ -1610,7 +1637,7 @@ namespace EvadePlus
                         Delay = 250,
                         Range = 825,
                         Radius = 75,
-                        MissileSpeed = 2200,
+                        MissileSpeed = 2250,
                         DangerValue = 2,
                         IsDangerous = false,
                         MissileSpellName = "LissandraQ"
@@ -1641,7 +1668,7 @@ namespace EvadePlus
                         ChampionName = "Lucian",
                         SpellName = "LucianQ",
                         Slot = SpellSlot.Q,
-                        Delay = 450,
+                        Delay = 350,
                         Range = 1140,
                         Radius = 65,
                         MissileSpeed = 0,
@@ -1677,9 +1704,9 @@ namespace EvadePlus
                         SpellName = "LuluQPix",
                         Slot = SpellSlot.Q,
                         Delay = 250,
-                        Range = 925,
-                        Radius = 80,
-                        MissileSpeed = 1450,
+                        Range =1300,
+                        Radius = 70,
+                        MissileSpeed = 1200,
                         DangerValue = 2,
                         IsDangerous = false,
                         MissileSpellName = "LuluQMissileTwo"
@@ -1747,28 +1774,28 @@ namespace EvadePlus
                         Slot = SpellSlot.R,
                         Delay = 0,
                         Range = 1000,
-                        Radius = 270,
-                        MissileSpeed = 1500,
+                        Radius = 300,
+                        MissileSpeed = 2000,
                         DangerValue = 5,
                         IsDangerous = true,
                         MissileSpellName = "UFSlash"
                     }
                 },
-                //new LinearMissileSkillshot
-                //{
-                //    SpellData = new SpellData
-                //    {
-                //        ChampionName = "Malzahar",
-                //        SpellName = "AlZaharCalloftheVoid",
-                //        Slot = SpellSlot.Q,
-                //        Delay = 1000,
-                //        Range = 900,
-                //        Radius = 85,
-                //        MissileSpeed = 1600,
-                //        DangerValue = 3,
-                //        MissileSpellName = "AlZaharCalloftheVoidMissile"
-                //    }
-                //},
+                new LinearMissileSkillshot
+                {
+                    SpellData = new SpellData
+                    {
+                        ChampionName = "Malzahar",
+                       SpellName = "AlZaharCalloftheVoid",
+                       Slot = SpellSlot.Q,
+                        Delay = 1000,
+                       Range = 900,
+                       Radius = 85,
+                        MissileSpeed = 1600,
+                        DangerValue = 3,
+                       MissileSpellName = "AlZaharCalloftheVoidMissile"
+                    }
+                },
                 //new CircularMissileSkillshot
                 //{
                 //    SpellData = new SpellData
@@ -1809,7 +1836,7 @@ namespace EvadePlus
                         ChampionName = "Nami",
                         SpellName = "NamiQ",
                         Slot = SpellSlot.Q,
-                        Delay = 950,
+                        Delay = 1000,
                         Range = 875,
                         Radius = 200,
                         MissileSpeed = 0,
@@ -1844,7 +1871,7 @@ namespace EvadePlus
                         SpellName = "NautilusAnchorDrag",
                         Slot = SpellSlot.Q,
                         Delay = 250,
-                        Range = 1080,
+                        Range = 1250,
                         Radius = 90,
                         MissileSpeed = 2000,
                         DangerValue = 3,
@@ -1860,7 +1887,7 @@ namespace EvadePlus
                         ChampionName = "Nidalee",
                         SpellName = "JavelinToss",
                         Slot = SpellSlot.Q,
-                        Delay = 125,
+                        Delay = 250,
                         Range = 1500,
                         Radius = 40,
                         MissileSpeed = 1300,
@@ -1886,21 +1913,21 @@ namespace EvadePlus
                         MissileSpellName = "NocturneDuskbringer"
                     }
                 },
-                //new LinearMissileSkillshot
-                //{
-                //    SpellData = new SpellData
-                //    {
-                //        ChampionName = "Olaf",
-                //        SpellName = "OlafAxeThrowCast",
-                //        Slot = SpellSlot.Q,
-                //        Delay = 250,
-                //        Range = 1000,
-                //        Radius = 90,
-                //        MissileSpeed = 1600,
-                //        DangerValue = 3,
-                //        MissileSpellName = "OlafAxeThrowCast"
-                //    }
-                //},
+                new LinearMissileSkillshot
+                {
+                    SpellData = new SpellData
+                    {
+                       ChampionName = "Olaf",
+                        SpellName = "OlafAxeThrowCast",
+                        Slot = SpellSlot.Q,
+                        Delay = 250,
+                        Range = 1000,
+                        Radius = 90,
+                        MissileSpeed = 1600,
+                        DangerValue = 3,
+                        MissileSpellName = "OlafAxeThrowCast"
+                    }
+                },
                 new LinearMissileSkillshot
                 {
                     SpellData = new SpellData
@@ -2125,7 +2152,7 @@ namespace EvadePlus
                         SpellName = "ShenShadowDash",
                         Slot = SpellSlot.E,
                         Delay = 0,
-                        Range = 1600,
+                        Range =700,
                         Radius = 75,
                         MissileSpeed = 1250,
                         DangerValue = 3,
@@ -2158,10 +2185,10 @@ namespace EvadePlus
                         ChampionName = "Shyvana",
                         SpellName = "ShyvanaTransformCast",
                         Slot = SpellSlot.R,
-                        Delay = 250,
+                        Delay = 10,
                         Range = 1000,
                         Radius = 160,
-                        MissileSpeed = 1500,
+                        MissileSpeed = 1100,
                         DangerValue = 3,
                         IsDangerous = true,
                         MissileSpellName = "ShyvanaTransformCast"
@@ -2269,21 +2296,21 @@ namespace EvadePlus
                         MissileSpellName = "SorakaQ"
                     }
                 },
-                //new CircularMissileSkillshot
-                //{
-                //    SpellData = new SpellData
-                //    {
-                //        ChampionName = "Soraka",
-                //        SpellName = "SorakaE",
-                //        Slot = SpellSlot.E,
-                //        Delay = 1750,
-                //        Range = 925,
-                //        Radius = 275,
-                //        MissileSpeed = 0,
-                //        DangerValue = 3,
-                //        MissileSpellName = "SorakaE"
-                //    }
-                //},
+                new CircularMissileSkillshot
+                {
+                   SpellData = new SpellData
+                    {
+                        ChampionName = "Soraka",
+                        SpellName = "SorakaE",
+                       Slot = SpellSlot.E,
+                        Delay = 1750,
+                       Range = 925,
+                        Radius = 275,
+                        MissileSpeed = 0,
+                        DangerValue = 3,
+                        MissileSpellName = "SorakaE"
+                    }
+                },
                 new CircularMissileSkillshot
                 {
                     SpellData = new SpellData
@@ -2294,7 +2321,7 @@ namespace EvadePlus
                         Slot = SpellSlot.W,
                         Delay = 1100,
                         Range = 900,
-                        Radius = 200,
+                        Radius = 250,
                         MissileSpeed = 0,
                         DangerValue = 3,
                         IsDangerous = true,
@@ -2391,7 +2418,7 @@ namespace EvadePlus
                         SpellName = "ThreshQ",
                         Slot = SpellSlot.Q,
                         Delay = 500,
-                        Range = 1200,
+                        Range = 1100,
                         Radius = 70,
                         MissileSpeed = 1900,
                         DangerValue = 3,
@@ -2407,7 +2434,7 @@ namespace EvadePlus
                         ChampionName = "Thresh",
                         SpellName = "ThreshE",
                         Slot = SpellSlot.E,
-                        Delay = 125,
+                        Delay =0,
                         Range = 1075,
                         Radius = 110,
                         MissileSpeed = 2000,
@@ -2441,7 +2468,7 @@ namespace EvadePlus
                         ChampionName = "Urgot",
                         SpellName = "UrgotHeatseekingLineMissile",
                         Slot = SpellSlot.Q,
-                        Delay = 125,
+                        Delay = 175,
                         Range = 1000,
                         Radius = 60,
                         MissileSpeed = 1600,
@@ -2461,7 +2488,7 @@ namespace EvadePlus
                         Delay = 250,
                         Range = 900,
                         Radius = 250,
-                        MissileSpeed = 1500,
+                        MissileSpeed = 1750,
                         DangerValue = 2,
                         IsDangerous = false,
                         MissileSpellName = "UrgotPlasmaGrenadeBoom"
@@ -2529,7 +2556,7 @@ namespace EvadePlus
                         Delay = 250,
                         Range = 950,
                         Radius = 70,
-                        MissileSpeed = 2000,
+                        MissileSpeed = 1750,
                         DangerValue = 2,
                         IsDangerous = false,
                         MissileSpellName = "VeigarBalefulStrikeMis"
@@ -2594,7 +2621,7 @@ namespace EvadePlus
                         Slot = SpellSlot.W,
                         Delay = 250,
                         Range = 1100,
-                        Radius = 90,
+                        Radius = 88,
                         MissileSpeed = 1700,
                         DangerValue = 2,
                         IsDangerous = false,
@@ -2650,21 +2677,21 @@ namespace EvadePlus
                 //        MissileSpellName = "ViQMissile"
                 //    }
                 //},
-                //new LinearMissileSkillshot //Unknown:
-                //{
-                //    SpellData = new SpellData
-                //    {
-                //        ChampionName = "Viktor",
-                //        SpellName = "ViktorDeathRay",
-                //        Slot = SpellSlot.E,
-                //        Delay = 0,
-                //        Range = 800,
-                //        Radius = 80,
-                //        MissileSpeed = 780,
-                //        DangerValue = 3,
-                //        MissileSpellName = "ViktorDeathRayMissile"
-                //    }
-                //},
+                new LinearMissileSkillshot //Unknown:
+                {
+                    SpellData = new SpellData
+                    {
+                        ChampionName = "Viktor",
+                      SpellName = "ViktorDeathRay",
+                        Slot = SpellSlot.E,
+                        Delay = 0,
+                        Range = 800,
+                        Radius = 80,
+                        MissileSpeed = 780,
+                        DangerValue = 3,
+                        MissileSpellName = "ViktorDeathRayMissile"
+                    }
+                },
                 //new LinearMissileSkillshot
                 //{
                 //    SpellData = new SpellData
@@ -2735,9 +2762,9 @@ namespace EvadePlus
                         ChampionName = "Xerath",
                         SpellName = "XerathArcaneBarrage2",
                         Slot = SpellSlot.W,
-                        Delay = 700,
+                        Delay = 750,
                         Range = 1100,
-                        Radius = 270,
+                        Radius = 280,
                         MissileSpeed = 0,
                         DangerValue = 2,
                         IsDangerous = false,
@@ -2754,7 +2781,7 @@ namespace EvadePlus
                         Slot = SpellSlot.Q,
                         Delay = 500,
                         Range = 1525,
-                        Radius = 80,
+                        Radius = 70,
                         MissileSpeed = 0,
                         DangerValue = 2,
                         IsDangerous = false,
@@ -2769,7 +2796,7 @@ namespace EvadePlus
                         ChampionName = "Xerath",
                         SpellName = "xerathrmissilewrapper",
                         Slot = SpellSlot.R,
-                        Delay = 700,
+                        Delay = 600,
                         Range = 5600,
                         Radius = 200,
                         MissileSpeed = 0,
@@ -2789,7 +2816,7 @@ namespace EvadePlus
                         Delay = 200,
                         Range = 1125,
                         Radius = 60,
-                        MissileSpeed = 1400,
+                        MissileSpeed = 1600,
                         DangerValue = 2,
                         IsDangerous = true,
                         MissileSpellName = "XerathMageSpearMissile"
@@ -2803,10 +2830,10 @@ namespace EvadePlus
                         ChampionName = "Yasuo",
                         SpellName = "yasuoq3w",
                         Slot = SpellSlot.Q,
-                        Delay = 400,
-                        Range = 1150,
+                        Delay = 250,
+                        Range = 1100,
                         Radius = 90,
-                        MissileSpeed = 1500,
+                        MissileSpeed = 1200,
                         DangerValue = 3,
                         MissileSpellName = "yasuoq3w"
                     }
@@ -2819,9 +2846,9 @@ namespace EvadePlus
                         ChampionName = "Yasuo",
                         SpellName = "yasuoq",
                         Slot = SpellSlot.Q,
-                        Delay = 400,
-                        Range = 550,
-                        Radius = 40,
+                        Delay = 250,
+                        Range = 500,
+                        Radius = 35,
                         MissileSpeed = 0,
                         DangerValue = 2,
                         IsDangerous = true,
@@ -2853,7 +2880,7 @@ namespace EvadePlus
                         ChampionName = "Zed",
                         SpellName = "ZedQ",
                         Slot = SpellSlot.Q,
-                        Delay = 300,
+                        Delay = 250,
                         Range = 925,
                         Radius = 50,
                         MissileSpeed = 1700,
@@ -2968,7 +2995,7 @@ namespace EvadePlus
                         Delay = 250,
                         Range = 1150,
                         Radius = 70,
-                        MissileSpeed = 1150,
+                        MissileSpeed = 1400,
                         DangerValue = 3,
                         IsDangerous = true,
                         MissileSpellName = "ZyraGraspingRoots"
@@ -2984,8 +3011,8 @@ namespace EvadePlus
                         Slot = SpellSlot.Internal,
                         Delay = 500,
                         Range = 1474,
-                        Radius = 80,
-                        MissileSpeed = 2000,
+                        Radius = 70,
+                        MissileSpeed = 1900,
                         DangerValue = 3,
                         IsDangerous = true,
                         MissileSpellName = "zyrapassivedeathmanager"
